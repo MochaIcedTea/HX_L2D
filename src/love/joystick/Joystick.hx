@@ -52,6 +52,14 @@ extern class Joystick extends Object
 }
 
 @:multiReturn
+extern class JoystickGetGamepadMappingResult
+{
+	var inputtype : JoystickInputType;
+	var inputindex : Float;
+	var hatdirection : JoystickHat;
+}
+
+@:multiReturn
 extern class JoystickGetAxesResult
 {
 	var axisDir1 : Float;
@@ -60,11 +68,11 @@ extern class JoystickGetAxesResult
 }
 
 @:multiReturn
-extern class JoystickGetGamepadMappingResult
+extern class JoystickGetDeviceInfoResult
 {
-	var inputtype : JoystickInputType;
-	var inputindex : Float;
-	var hatdirection : JoystickHat;
+	var vendorID : Float;
+	var productID : Float;
+	var productVersion : Float;
 }
 
 @:multiReturn
@@ -79,12 +87,4 @@ extern class JoystickGetVibrationResult
 {
 	var left : Float;
 	var right : Float;
-}
-
-@:multiReturn
-extern class JoystickGetDeviceInfoResult
-{
-	var vendorID : Float;
-	var productID : Float;
-	var productVersion : Float;
 }

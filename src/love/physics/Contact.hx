@@ -51,15 +51,15 @@ extern class ContactGetFixturesResult
 }
 
 @:multiReturn
-extern class ContactGetChildrenResult
-{
-	var indexA : Float;
-	var indexB : Float;
-}
-
-@:multiReturn
 extern class ContactGetNormalResult
 {
 	var nx : Float;
 	var ny : Float;
+}
+
+@:multiReturn
+extern class ContactGetChildrenResult
+{
+	var indexA : Float;
+	var indexB : Float;
 }

@@ -298,10 +298,19 @@ extern class GraphicsModule
 }
 
 @:multiReturn
-extern class GraphicsModuleTransformPointResult
+extern class GraphicsModuleGetColorResult
 {
-	var screenX : Float;
-	var screenY : Float;
+	var r : Float;
+	var g : Float;
+	var b : Float;
+	var a : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleValidateShaderResult
+{
+	var status : Bool;
+	var message : String;
 }
 
 @:multiReturn
@@ -309,6 +318,15 @@ extern class GraphicsModuleGetPixelDimensionsResult
 {
 	var pixelwidth : Float;
 	var pixelheight : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetBackgroundColorResult
+{
+	var r : Float;
+	var g : Float;
+	var b : Float;
+	var a : Float;
 }
 
 @:multiReturn
@@ -328,30 +346,6 @@ extern class GraphicsModuleGetColorMaskResult
 }
 
 @:multiReturn
-extern class GraphicsModuleGetRendererInfoResult
-{
-	var name : String;
-	var version : String;
-	var vendor : String;
-	var device : String;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetDefaultFilterResult
-{
-	var min : FilterMode;
-	var mag : FilterMode;
-	var anisotropy : Float;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetDepthModeResult
-{
-	var comparemode : CompareMode;
-	var write : Bool;
-}
-
-@:multiReturn
 extern class GraphicsModuleGetBlendModeResult
 {
 	var mode : BlendMode;
@@ -359,21 +353,17 @@ extern class GraphicsModuleGetBlendModeResult
 }
 
 @:multiReturn
-extern class GraphicsModuleGetColorResult
+extern class GraphicsModuleGetDimensionsResult
 {
-	var r : Float;
-	var g : Float;
-	var b : Float;
-	var a : Float;
+	var width : Float;
+	var height : Float;
 }
 
 @:multiReturn
-extern class GraphicsModuleGetBackgroundColorResult
+extern class GraphicsModuleGetStencilTestResult
 {
-	var r : Float;
-	var g : Float;
-	var b : Float;
-	var a : Float;
+	var comparemode : CompareMode;
+	var comparevalue : Float;
 }
 
 @:multiReturn
@@ -386,22 +376,32 @@ extern class GraphicsModuleGetScissorResult
 }
 
 @:multiReturn
-extern class GraphicsModuleValidateShaderResult
+extern class GraphicsModuleGetDefaultFilterResult
 {
-	var status : Bool;
-	var message : String;
+	var min : FilterMode;
+	var mag : FilterMode;
+	var anisotropy : Float;
 }
 
 @:multiReturn
-extern class GraphicsModuleGetStencilTestResult
+extern class GraphicsModuleGetRendererInfoResult
+{
+	var name : String;
+	var version : String;
+	var vendor : String;
+	var device : String;
+}
+
+@:multiReturn
+extern class GraphicsModuleTransformPointResult
+{
+	var screenX : Float;
+	var screenY : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetDepthModeResult
 {
 	var comparemode : CompareMode;
-	var comparevalue : Float;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetDimensionsResult
-{
-	var width : Float;
-	var height : Float;
+	var write : Bool;
 }

@@ -60,6 +60,20 @@ extern class TextureGetWrapResult
 }
 
 @:multiReturn
+extern class TextureGetPixelDimensionsResult
+{
+	var pixelwidth : Float;
+	var pixelheight : Float;
+}
+
+@:multiReturn
+extern class TextureGetMipmapFilterResult
+{
+	var mode : FilterMode;
+	var sharpness : Float;
+}
+
+@:multiReturn
 extern class TextureGetFilterResult
 {
 	var min : FilterMode;
@@ -68,22 +82,8 @@ extern class TextureGetFilterResult
 }
 
 @:multiReturn
-extern class TextureGetPixelDimensionsResult
-{
-	var pixelwidth : Float;
-	var pixelheight : Float;
-}
-
-@:multiReturn
 extern class TextureGetDimensionsResult
 {
 	var width : Float;
 	var height : Float;
-}
-
-@:multiReturn
-extern class TextureGetMipmapFilterResult
-{
-	var mode : FilterMode;
-	var sharpness : Float;
 }

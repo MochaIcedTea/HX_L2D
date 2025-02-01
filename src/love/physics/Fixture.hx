@@ -70,6 +70,14 @@ extern class FixtureGetBoundingBoxResult
 }
 
 @:multiReturn
+extern class FixtureRayCastResult
+{
+	var xn : Float;
+	var yn : Float;
+	var fraction : Float;
+}
+
+@:multiReturn
 extern class FixtureGetFilterDataResult
 {
 	var categories : Float;
@@ -84,12 +92,4 @@ extern class FixtureGetMassDataResult
 	var y : Float;
 	var mass : Float;
 	var inertia : Float;
-}
-
-@:multiReturn
-extern class FixtureRayCastResult
-{
-	var xn : Float;
-	var yn : Float;
-	var fraction : Float;
 }
