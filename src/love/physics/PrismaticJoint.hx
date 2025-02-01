@@ -47,15 +47,15 @@ extern class PrismaticJoint extends Joint
 }
 
 @:multiReturn
-extern class PrismaticJointGetLimitsResult
-{
-	var lower : Float;
-	var upper : Float;
-}
-
-@:multiReturn
 extern class PrismaticJointGetAxisResult
 {
 	var x : Float;
 	var y : Float;
+}
+
+@:multiReturn
+extern class PrismaticJointGetLimitsResult
+{
+	var lower : Float;
+	var upper : Float;
 }

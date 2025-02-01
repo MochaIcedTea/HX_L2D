@@ -27,12 +27,10 @@ extern class GlyphData extends Data
 }
 
 @:multiReturn
-extern class GlyphDataGetBoundingBoxResult
+extern class GlyphDataGetBearingResult
 {
-	var x : Float;
-	var y : Float;
-	var width : Float;
-	var height : Float;
+	var bx : Float;
+	var by : Float;
 }
 
 @:multiReturn
@@ -43,8 +41,10 @@ extern class GlyphDataGetDimensionsResult
 }
 
 @:multiReturn
-extern class GlyphDataGetBearingResult
+extern class GlyphDataGetBoundingBoxResult
 {
-	var bx : Float;
-	var by : Float;
+	var x : Float;
+	var y : Float;
+	var width : Float;
+	var height : Float;
 }

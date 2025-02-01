@@ -60,14 +60,6 @@ extern class JoystickGetGamepadMappingResult
 }
 
 @:multiReturn
-extern class JoystickGetAxesResult
-{
-	var axisDir1 : Float;
-	var axisDir2 : Float;
-	var axisDirN : Float;
-}
-
-@:multiReturn
 extern class JoystickGetDeviceInfoResult
 {
 	var vendorID : Float;
@@ -76,15 +68,23 @@ extern class JoystickGetDeviceInfoResult
 }
 
 @:multiReturn
-extern class JoystickGetIDResult
-{
-	var id : Float;
-	var instanceid : Float;
-}
-
-@:multiReturn
 extern class JoystickGetVibrationResult
 {
 	var left : Float;
 	var right : Float;
+}
+
+@:multiReturn
+extern class JoystickGetAxesResult
+{
+	var axisDir1 : Float;
+	var axisDir2 : Float;
+	var axisDirN : Float;
+}
+
+@:multiReturn
+extern class JoystickGetIDResult
+{
+	var id : Float;
+	var instanceid : Float;
 }
