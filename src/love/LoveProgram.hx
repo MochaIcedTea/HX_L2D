@@ -1,4 +1,4 @@
-package src.love;
+package love;
 
 import lua.Table;
 import love.Love;

@@ -298,19 +298,19 @@ extern class GraphicsModule
 }
 
 @:multiReturn
+extern class GraphicsModuleGetDimensionsResult
+{
+	var width : Float;
+	var height : Float;
+}
+
+@:multiReturn
 extern class GraphicsModuleGetBackgroundColorResult
 {
 	var r : Float;
 	var g : Float;
 	var b : Float;
 	var a : Float;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetPixelDimensionsResult
-{
-	var pixelwidth : Float;
-	var pixelheight : Float;
 }
 
 @:multiReturn
@@ -321,28 +321,12 @@ extern class GraphicsModuleValidateShaderResult
 }
 
 @:multiReturn
-extern class GraphicsModuleGetDimensionsResult
+extern class GraphicsModuleGetColorMaskResult
 {
-	var width : Float;
-	var height : Float;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetRendererInfoResult
-{
-	var name : String;
-	var version : String;
-	var vendor : String;
-	var device : String;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetScissorResult
-{
-	var x : Float;
-	var y : Float;
-	var width : Float;
-	var height : Float;
+	var r : Bool;
+	var g : Bool;
+	var b : Bool;
+	var a : Bool;
 }
 
 @:multiReturn
@@ -353,36 +337,19 @@ extern class GraphicsModuleGetDepthModeResult
 }
 
 @:multiReturn
-extern class GraphicsModuleGetColorResult
+extern class GraphicsModuleTransformPointResult
 {
-	var r : Float;
-	var g : Float;
-	var b : Float;
-	var a : Float;
+	var screenX : Float;
+	var screenY : Float;
 }
 
 @:multiReturn
-extern class GraphicsModuleGetBlendModeResult
+extern class GraphicsModuleGetRendererInfoResult
 {
-	var mode : BlendMode;
-	var alphamode : BlendAlphaMode;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetDefaultFilterResult
-{
-	var min : FilterMode;
-	var mag : FilterMode;
-	var anisotropy : Float;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetColorMaskResult
-{
-	var r : Bool;
-	var g : Bool;
-	var b : Bool;
-	var a : Bool;
+	var name : String;
+	var version : String;
+	var vendor : String;
+	var device : String;
 }
 
 @:multiReturn
@@ -400,8 +367,41 @@ extern class GraphicsModuleGetStencilTestResult
 }
 
 @:multiReturn
-extern class GraphicsModuleTransformPointResult
+extern class GraphicsModuleGetScissorResult
 {
-	var screenX : Float;
-	var screenY : Float;
+	var x : Float;
+	var y : Float;
+	var width : Float;
+	var height : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetDefaultFilterResult
+{
+	var min : FilterMode;
+	var mag : FilterMode;
+	var anisotropy : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetBlendModeResult
+{
+	var mode : BlendMode;
+	var alphamode : BlendAlphaMode;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetColorResult
+{
+	var r : Float;
+	var g : Float;
+	var b : Float;
+	var a : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetPixelDimensionsResult
+{
+	var pixelwidth : Float;
+	var pixelheight : Float;
 }
