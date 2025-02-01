@@ -14,6 +14,10 @@ class LoveProgram {
 		return null;
 	}
 
+	overload public function load() {
+		load(null, null);
+	}
+
 	public function update(dt:Float) {}
 
 	public function draw() {}

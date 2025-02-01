@@ -131,16 +131,31 @@ extern class ParticleSystem extends Drawable
 }
 
 @:multiReturn
-extern class ParticleSystemGetLinearAccelerationResult
+extern class ParticleSystemGetColorsResult
 {
-	var xmin : Float;
-	var ymin : Float;
-	var xmax : Float;
-	var ymax : Float;
+	var r1 : Float;
+	var g1 : Float;
+	var b1 : Float;
+	var a1 : Float;
+	var r2 : Float;
+	var g2 : Float;
+	var b2 : Float;
+	var a2 : Float;
+	var r8 : Float;
+	var g8 : Float;
+	var b8 : Float;
+	var a8 : Float;
 }
 
 @:multiReturn
-extern class ParticleSystemGetTangentialAccelerationResult
+extern class ParticleSystemGetRadialAccelerationResult
+{
+	var min : Float;
+	var max : Float;
+}
+
+@:multiReturn
+extern class ParticleSystemGetParticleLifetimeResult
 {
 	var min : Float;
 	var max : Float;
@@ -155,31 +170,29 @@ extern class ParticleSystemGetSpinResult
 }
 
 @:multiReturn
-extern class ParticleSystemGetLinearDampingResult
+extern class ParticleSystemGetTangentialAccelerationResult
 {
 	var min : Float;
 	var max : Float;
 }
 
 @:multiReturn
-extern class ParticleSystemGetParticleLifetimeResult
+extern class ParticleSystemGetLinearAccelerationResult
 {
-	var min : Float;
-	var max : Float;
+	var xmin : Float;
+	var ymin : Float;
+	var xmax : Float;
+	var ymax : Float;
 }
 
 @:multiReturn
-extern class ParticleSystemGetRadialAccelerationResult
+extern class ParticleSystemGetEmissionAreaResult
 {
-	var min : Float;
-	var max : Float;
-}
-
-@:multiReturn
-extern class ParticleSystemGetOffsetResult
-{
-	var ox : Float;
-	var oy : Float;
+	var distribution : AreaSpreadDistribution;
+	var dx : Float;
+	var dy : Float;
+	var angle : Float;
+	var directionRelativeToCenter : Bool;
 }
 
 @:multiReturn
@@ -198,23 +211,6 @@ extern class ParticleSystemGetSizesResult
 }
 
 @:multiReturn
-extern class ParticleSystemGetColorsResult
-{
-	var r1 : Float;
-	var g1 : Float;
-	var b1 : Float;
-	var a1 : Float;
-	var r2 : Float;
-	var g2 : Float;
-	var b2 : Float;
-	var a2 : Float;
-	var r8 : Float;
-	var g8 : Float;
-	var b8 : Float;
-	var a8 : Float;
-}
-
-@:multiReturn
 extern class ParticleSystemGetRotationResult
 {
 	var min : Float;
@@ -222,18 +218,22 @@ extern class ParticleSystemGetRotationResult
 }
 
 @:multiReturn
-extern class ParticleSystemGetEmissionAreaResult
-{
-	var distribution : AreaSpreadDistribution;
-	var dx : Float;
-	var dy : Float;
-	var angle : Float;
-	var directionRelativeToCenter : Bool;
-}
-
-@:multiReturn
 extern class ParticleSystemGetPositionResult
 {
 	var x : Float;
 	var y : Float;
+}
+
+@:multiReturn
+extern class ParticleSystemGetOffsetResult
+{
+	var ox : Float;
+	var oy : Float;
+}
+
+@:multiReturn
+extern class ParticleSystemGetLinearDampingResult
+{
+	var min : Float;
+	var max : Float;
 }

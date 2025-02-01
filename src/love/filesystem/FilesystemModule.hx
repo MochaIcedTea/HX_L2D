@@ -99,6 +99,13 @@ extern class FilesystemModuleWriteResult
 }
 
 @:multiReturn
+extern class FilesystemModuleNewFileDataResult
+{
+	var data : FileData;
+	var err : String;
+}
+
+@:multiReturn
 extern class FilesystemModuleReadResult
 {
 	var contents : Dynamic;
@@ -108,22 +115,15 @@ extern class FilesystemModuleReadResult
 }
 
 @:multiReturn
-extern class FilesystemModuleNewFileResult
-{
-	var file : File;
-	var errorstr : String;
-}
-
-@:multiReturn
-extern class FilesystemModuleNewFileDataResult
-{
-	var data : FileData;
-	var err : String;
-}
-
-@:multiReturn
 extern class FilesystemModuleLoadResult
 {
 	var chunk : Dynamic;
 	var errormsg : String;
+}
+
+@:multiReturn
+extern class FilesystemModuleNewFileResult
+{
+	var file : File;
+	var errorstr : String;
 }
