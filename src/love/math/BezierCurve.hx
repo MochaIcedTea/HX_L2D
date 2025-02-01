@@ -37,14 +37,14 @@ extern class BezierCurve extends Object
 }
 
 @:multiReturn
-extern class BezierCurveGetControlPointResult
+extern class BezierCurveEvaluateResult
 {
 	var x : Float;
 	var y : Float;
 }
 
 @:multiReturn
-extern class BezierCurveEvaluateResult
+extern class BezierCurveGetControlPointResult
 {
 	var x : Float;
 	var y : Float;
