@@ -85,10 +85,10 @@ extern class FilesystemModule
 }
 
 @:multiReturn
-extern class FilesystemModuleWriteResult
+extern class FilesystemModuleNewFileResult
 {
-	var success : Bool;
-	var message : String;
+	var file : File;
+	var errorstr : String;
 }
 
 @:multiReturn
@@ -99,9 +99,16 @@ extern class FilesystemModuleLoadResult
 }
 
 @:multiReturn
+extern class FilesystemModuleWriteResult
+{
+	var success : Bool;
+	var message : String;
+}
+
+@:multiReturn
 extern class FilesystemModuleReadResult
 {
-	var contents : FileData ;
+	var contents : Dynamic;
 	var size : Float;
 	var contents : nil;
 	var error : String;
@@ -119,11 +126,4 @@ extern class FilesystemModuleAppendResult
 {
 	var success : Bool;
 	var errormsg : String;
-}
-
-@:multiReturn
-extern class FilesystemModuleNewFileResult
-{
-	var file : File;
-	var errorstr : String;
 }

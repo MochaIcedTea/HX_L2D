@@ -22,5 +22,5 @@ extern class Rasterizer extends Object
 
 	public function getLineHeight() : Float;
 
-	public function hasGlyphs(glyph1:string or number, glyph2:string or number, args:Rest<string or number>) : Bool;
+	public function hasGlyphs(glyph1:Dynamic, glyph2:Dynamic, args:Rest<Dynamic>) : Bool;
 }
