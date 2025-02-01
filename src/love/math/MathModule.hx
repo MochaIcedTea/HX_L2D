@@ -75,20 +75,20 @@ extern class MathModuleGammaToLinearResult
 }
 
 @:multiReturn
-extern class MathModuleLinearToGammaResult
-{
-	var cr : Float;
-	var cg : Float;
-	var cb : Float;
-}
-
-@:multiReturn
 extern class MathModuleColorToBytesResult
 {
 	var rb : Float;
 	var gb : Float;
 	var bb : Float;
 	var ab : Float;
+}
+
+@:multiReturn
+extern class MathModuleLinearToGammaResult
+{
+	var cr : Float;
+	var cg : Float;
+	var cb : Float;
 }
 
 @:multiReturn

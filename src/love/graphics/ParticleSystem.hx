@@ -148,14 +148,7 @@ extern class ParticleSystemGetColorsResult
 }
 
 @:multiReturn
-extern class ParticleSystemGetRadialAccelerationResult
-{
-	var min : Float;
-	var max : Float;
-}
-
-@:multiReturn
-extern class ParticleSystemGetParticleLifetimeResult
+extern class ParticleSystemGetSpeedResult
 {
 	var min : Float;
 	var max : Float;
@@ -170,33 +163,14 @@ extern class ParticleSystemGetSpinResult
 }
 
 @:multiReturn
-extern class ParticleSystemGetTangentialAccelerationResult
+extern class ParticleSystemGetLinearDampingResult
 {
 	var min : Float;
 	var max : Float;
 }
 
 @:multiReturn
-extern class ParticleSystemGetLinearAccelerationResult
-{
-	var xmin : Float;
-	var ymin : Float;
-	var xmax : Float;
-	var ymax : Float;
-}
-
-@:multiReturn
-extern class ParticleSystemGetEmissionAreaResult
-{
-	var distribution : AreaSpreadDistribution;
-	var dx : Float;
-	var dy : Float;
-	var angle : Float;
-	var directionRelativeToCenter : Bool;
-}
-
-@:multiReturn
-extern class ParticleSystemGetSpeedResult
+extern class ParticleSystemGetRadialAccelerationResult
 {
 	var min : Float;
 	var max : Float;
@@ -208,6 +182,23 @@ extern class ParticleSystemGetSizesResult
 	var size1 : Float;
 	var size2 : Float;
 	var size8 : Float;
+}
+
+@:multiReturn
+extern class ParticleSystemGetParticleLifetimeResult
+{
+	var min : Float;
+	var max : Float;
+}
+
+@:multiReturn
+extern class ParticleSystemGetEmissionAreaResult
+{
+	var distribution : AreaSpreadDistribution;
+	var dx : Float;
+	var dy : Float;
+	var angle : Float;
+	var directionRelativeToCenter : Bool;
 }
 
 @:multiReturn
@@ -225,15 +216,24 @@ extern class ParticleSystemGetPositionResult
 }
 
 @:multiReturn
+extern class ParticleSystemGetLinearAccelerationResult
+{
+	var xmin : Float;
+	var ymin : Float;
+	var xmax : Float;
+	var ymax : Float;
+}
+
+@:multiReturn
+extern class ParticleSystemGetTangentialAccelerationResult
+{
+	var min : Float;
+	var max : Float;
+}
+
+@:multiReturn
 extern class ParticleSystemGetOffsetResult
 {
 	var ox : Float;
 	var oy : Float;
-}
-
-@:multiReturn
-extern class ParticleSystemGetLinearDampingResult
-{
-	var min : Float;
-	var max : Float;
 }
