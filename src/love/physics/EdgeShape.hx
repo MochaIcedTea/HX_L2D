@@ -28,14 +28,14 @@ extern class EdgeShapeGetPointsResult
 }
 
 @:multiReturn
-extern class EdgeShapeGetPreviousVertexResult
+extern class EdgeShapeGetNextVertexResult
 {
 	var x : Float;
 	var y : Float;
 }
 
 @:multiReturn
-extern class EdgeShapeGetNextVertexResult
+extern class EdgeShapeGetPreviousVertexResult
 {
 	var x : Float;
 	var y : Float;

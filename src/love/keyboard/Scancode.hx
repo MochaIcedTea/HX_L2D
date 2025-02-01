@@ -1,5 +1,5 @@
 package love.keyboard;
-@:enum
+enum
 abstract Scancode (String)
 {
 	var A = "a";

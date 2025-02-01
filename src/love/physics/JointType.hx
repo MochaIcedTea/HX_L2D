@@ -1,5 +1,5 @@
 package love.physics;
-@:enum
+enum
 abstract JointType (String)
 {
 	var Distance = "distance";

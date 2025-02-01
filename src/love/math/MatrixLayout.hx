@@ -1,5 +1,5 @@
 package love.math;
-@:enum
+enum
 abstract MatrixLayout (String)
 {
 	var Row = "row";

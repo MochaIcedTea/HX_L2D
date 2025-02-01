@@ -1,5 +1,5 @@
 package love.window;
-@:enum
+enum
 abstract DisplayOrientation (String)
 {
 	var Unknown = "unknown";

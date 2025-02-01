@@ -1,5 +1,5 @@
 package love.graphics;
-@:enum
+enum
 abstract DrawMode (String)
 {
 	var Fill = "fill";

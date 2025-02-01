@@ -1,5 +1,5 @@
 package love.graphics;
-@:enum
+enum
 abstract IndexDataType (String)
 {
 	var Uint16 = "uint16";

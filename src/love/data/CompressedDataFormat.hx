@@ -1,5 +1,5 @@
 package love.data;
-@:enum
+enum
 abstract CompressedDataFormat (String)
 {
 	var Lz4 = "lz4";

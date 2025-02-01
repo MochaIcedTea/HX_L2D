@@ -1,5 +1,5 @@
 package love.audio;
-@:enum
+enum
 abstract FilterType (String)
 {
 	var Lowpass = "lowpass";

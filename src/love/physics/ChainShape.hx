@@ -41,14 +41,14 @@ extern class ChainShapeGetNextVertexResult
 }
 
 @:multiReturn
-extern class ChainShapeGetPreviousVertexResult
+extern class ChainShapeGetPointResult
 {
 	var x : Float;
 	var y : Float;
 }
 
 @:multiReturn
-extern class ChainShapeGetPointResult
+extern class ChainShapeGetPreviousVertexResult
 {
 	var x : Float;
 	var y : Float;

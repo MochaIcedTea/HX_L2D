@@ -1,5 +1,5 @@
 package love.graphics;
-@:enum
+enum
 abstract VertexWinding (String)
 {
 	var Cw = "cw";

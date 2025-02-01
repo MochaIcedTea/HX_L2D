@@ -1,5 +1,5 @@
 package love.image;
-@:enum
+enum
 abstract PixelFormat (String)
 {
 	var Unknown = "unknown";

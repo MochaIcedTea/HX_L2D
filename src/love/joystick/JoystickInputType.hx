@@ -1,5 +1,5 @@
 package love.joystick;
-@:enum
+enum
 abstract JoystickInputType (String)
 {
 	var Axis = "axis";

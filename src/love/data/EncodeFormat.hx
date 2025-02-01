@@ -1,5 +1,5 @@
 package love.data;
-@:enum
+enum
 abstract EncodeFormat (String)
 {
 	var Base64 = "base64";

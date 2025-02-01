@@ -1,5 +1,5 @@
 package love.graphics;
-@:enum
+enum
 abstract GraphicsLimit (String)
 {
 	var Pointsize = "pointsize";

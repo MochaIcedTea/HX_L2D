@@ -1,5 +1,5 @@
 package love.window;
-@:enum
+enum
 abstract FullscreenType (String)
 {
 	var Desktop = "desktop";

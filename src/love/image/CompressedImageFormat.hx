@@ -1,5 +1,5 @@
 package love.image;
-@:enum
+enum
 abstract CompressedImageFormat (String)
 {
 	var DXT1 = "DXT1";

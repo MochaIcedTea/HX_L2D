@@ -1,5 +1,5 @@
 package love.joystick;
-@:enum
+enum
 abstract GamepadButton (String)
 {
 	var A = "a";

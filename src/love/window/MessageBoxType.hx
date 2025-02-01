@@ -1,5 +1,5 @@
 package love.window;
-@:enum
+enum
 abstract MessageBoxType (String)
 {
 	var Info = "info";

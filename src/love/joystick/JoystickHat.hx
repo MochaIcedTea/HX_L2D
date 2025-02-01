@@ -1,5 +1,5 @@
 package love.joystick;
-@:enum
+enum
 abstract JoystickHat (String)
 {
 	var C = "c";

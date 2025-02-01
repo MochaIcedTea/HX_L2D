@@ -1,5 +1,5 @@
 package love.graphics;
-@:enum
+enum
 abstract GraphicsFeature (String)
 {
 	var Clampzero = "clampzero";

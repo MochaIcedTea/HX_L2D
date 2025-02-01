@@ -1,5 +1,5 @@
 package love.mouse;
-@:enum
+enum
 abstract CursorType (String)
 {
 	var Image = "image";

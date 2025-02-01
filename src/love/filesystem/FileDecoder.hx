@@ -1,5 +1,5 @@
 package love.filesystem;
-@:enum
+enum
 abstract FileDecoder (String)
 {
 	var File = "file";

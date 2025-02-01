@@ -1,5 +1,5 @@
 package love.data;
-@:enum
+enum
 abstract ContainerType (String)
 {
 	var Data = "data";

@@ -1,5 +1,5 @@
 package love.audio;
-@:enum
+enum
 abstract SourceType (String)
 {
 	var Static = "static";

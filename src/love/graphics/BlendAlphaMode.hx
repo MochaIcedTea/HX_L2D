@@ -1,5 +1,5 @@
 package love.graphics;
-@:enum
+enum
 abstract BlendAlphaMode (String)
 {
 	var Alphamultiply = "alphamultiply";

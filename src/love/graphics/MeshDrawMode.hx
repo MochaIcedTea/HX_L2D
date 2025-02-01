@@ -1,5 +1,5 @@
 package love.graphics;
-@:enum
+enum
 abstract MeshDrawMode (String)
 {
 	var Fan = "fan";

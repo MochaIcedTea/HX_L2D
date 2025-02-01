@@ -1,5 +1,5 @@
 package love.graphics;
-@:enum
+enum
 abstract StackType (String)
 {
 	var Transform = "transform";

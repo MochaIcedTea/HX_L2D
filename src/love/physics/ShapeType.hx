@@ -1,5 +1,5 @@
 package love.physics;
-@:enum
+enum
 abstract ShapeType (String)
 {
 	var Circle = "circle";

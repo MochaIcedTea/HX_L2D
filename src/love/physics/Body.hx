@@ -135,12 +135,17 @@ extern class Body extends Object
 }
 
 @:multiReturn
-extern class BodyGetLocalPointsResult
+extern class BodyGetLinearVelocityResult
 {
-	var x1 : Float;
-	var y1 : Float;
-	var x2 : Float;
-	var y2 : Float;
+	var x : Float;
+	var y : Float;
+}
+
+@:multiReturn
+extern class BodyGetLocalVectorResult
+{
+	var localX : Float;
+	var localY : Float;
 }
 
 @:multiReturn
@@ -153,10 +158,17 @@ extern class BodyGetMassDataResult
 }
 
 @:multiReturn
-extern class BodyGetLocalPointResult
+extern class BodyGetLinearVelocityFromWorldPointResult
 {
-	var localX : Float;
-	var localY : Float;
+	var vx : Float;
+	var vy : Float;
+}
+
+@:multiReturn
+extern class BodyGetLinearVelocityFromLocalPointResult
+{
+	var vx : Float;
+	var vy : Float;
 }
 
 @:multiReturn
@@ -164,6 +176,22 @@ extern class BodyGetWorldVectorResult
 {
 	var worldX : Float;
 	var worldY : Float;
+}
+
+@:multiReturn
+extern class BodyGetLocalCenterResult
+{
+	var x : Float;
+	var y : Float;
+}
+
+@:multiReturn
+extern class BodyGetLocalPointsResult
+{
+	var x1 : Float;
+	var y1 : Float;
+	var x2 : Float;
+	var y2 : Float;
 }
 
 @:multiReturn
@@ -176,10 +204,17 @@ extern class BodyGetWorldPointsResult
 }
 
 @:multiReturn
-extern class BodyGetLinearVelocityFromWorldPointResult
+extern class BodyGetWorldPointResult
 {
-	var vx : Float;
-	var vy : Float;
+	var worldX : Float;
+	var worldY : Float;
+}
+
+@:multiReturn
+extern class BodyGetWorldCenterResult
+{
+	var x : Float;
+	var y : Float;
 }
 
 @:multiReturn
@@ -191,27 +226,6 @@ extern class BodyGetTransformResult
 }
 
 @:multiReturn
-extern class BodyGetLinearVelocityFromLocalPointResult
-{
-	var vx : Float;
-	var vy : Float;
-}
-
-@:multiReturn
-extern class BodyGetLinearVelocityResult
-{
-	var x : Float;
-	var y : Float;
-}
-
-@:multiReturn
-extern class BodyGetLocalCenterResult
-{
-	var x : Float;
-	var y : Float;
-}
-
-@:multiReturn
 extern class BodyGetPositionResult
 {
 	var x : Float;
@@ -219,21 +233,7 @@ extern class BodyGetPositionResult
 }
 
 @:multiReturn
-extern class BodyGetWorldCenterResult
-{
-	var x : Float;
-	var y : Float;
-}
-
-@:multiReturn
-extern class BodyGetWorldPointResult
-{
-	var worldX : Float;
-	var worldY : Float;
-}
-
-@:multiReturn
-extern class BodyGetLocalVectorResult
+extern class BodyGetLocalPointResult
 {
 	var localX : Float;
 	var localY : Float;

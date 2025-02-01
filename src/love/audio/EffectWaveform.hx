@@ -1,5 +1,5 @@
 package love.audio;
-@:enum
+enum
 abstract EffectWaveform (String)
 {
 	var Sawtooth = "sawtooth";

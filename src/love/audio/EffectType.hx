@@ -1,5 +1,5 @@
 package love.audio;
-@:enum
+enum
 abstract EffectType (String)
 {
 	var Chorus = "chorus";

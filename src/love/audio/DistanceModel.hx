@@ -1,5 +1,5 @@
 package love.audio;
-@:enum
+enum
 abstract DistanceModel (String)
 {
 	var None = "none";

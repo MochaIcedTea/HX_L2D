@@ -1,5 +1,5 @@
 package love.image;
-@:enum
+enum
 abstract ImageFormat (String)
 {
 	var Tga = "tga";

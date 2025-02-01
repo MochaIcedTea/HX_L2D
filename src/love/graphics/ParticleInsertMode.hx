@@ -1,5 +1,5 @@
 package love.graphics;
-@:enum
+enum
 abstract ParticleInsertMode (String)
 {
 	var Top = "top";

@@ -1,5 +1,5 @@
 package love.graphics;
-@:enum
+enum
 abstract FilterMode (String)
 {
 	var Linear = "linear";

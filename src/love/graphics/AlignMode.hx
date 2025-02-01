@@ -1,5 +1,5 @@
 package love.graphics;
-@:enum
+enum
 abstract AlignMode (String)
 {
 	var Center = "center";

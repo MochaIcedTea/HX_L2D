@@ -1,5 +1,5 @@
 package love.system;
-@:enum
+enum
 abstract PowerState (String)
 {
 	var Unknown = "unknown";

@@ -1,5 +1,5 @@
 package love.data;
-@:enum
+enum
 abstract HashFunction (String)
 {
 	var Md5 = "md5";

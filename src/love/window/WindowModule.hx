@@ -86,12 +86,10 @@ extern class WindowModule
 }
 
 @:multiReturn
-extern class WindowModuleGetSafeAreaResult
+extern class WindowModuleGetDesktopDimensionsResult
 {
-	var x : Float;
-	var y : Float;
-	var w : Float;
-	var h : Float;
+	var width : Float;
+	var height : Float;
 }
 
 @:multiReturn
@@ -102,6 +100,13 @@ extern class WindowModuleFromPixelsResult
 }
 
 @:multiReturn
+extern class WindowModuleGetFullscreenResult
+{
+	var fullscreen : Bool;
+	var fstype : FullscreenType;
+}
+
+@:multiReturn
 extern class WindowModuleToPixelsResult
 {
 	var px : Float;
@@ -109,10 +114,12 @@ extern class WindowModuleToPixelsResult
 }
 
 @:multiReturn
-extern class WindowModuleGetDesktopDimensionsResult
+extern class WindowModuleGetSafeAreaResult
 {
-	var width : Float;
-	var height : Float;
+	var x : Float;
+	var y : Float;
+	var w : Float;
+	var h : Float;
 }
 
 @:multiReturn
@@ -121,13 +128,6 @@ extern class WindowModuleGetPositionResult
 	var x : Float;
 	var y : Float;
 	var displayindex : Float;
-}
-
-@:multiReturn
-extern class WindowModuleGetFullscreenResult
-{
-	var fullscreen : Bool;
-	var fstype : FullscreenType;
 }
 
 @:multiReturn

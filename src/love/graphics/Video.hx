@@ -38,16 +38,16 @@ extern class Video extends Drawable
 }
 
 @:multiReturn
-extern class VideoGetDimensionsResult
-{
-	var width : Float;
-	var height : Float;
-}
-
-@:multiReturn
 extern class VideoGetFilterResult
 {
 	var min : FilterMode;
 	var mag : FilterMode;
 	var anisotropy : Float;
+}
+
+@:multiReturn
+extern class VideoGetDimensionsResult
+{
+	var width : Float;
+	var height : Float;
 }

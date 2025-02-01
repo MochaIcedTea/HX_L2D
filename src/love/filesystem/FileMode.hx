@@ -1,5 +1,5 @@
 package love.filesystem;
-@:enum
+enum
 abstract FileMode (String)
 {
 	var R = "r";

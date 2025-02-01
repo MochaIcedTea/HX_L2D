@@ -1,5 +1,5 @@
 package love.graphics;
-@:enum
+enum
 abstract ArcType (String)
 {
 	var Pie = "pie";

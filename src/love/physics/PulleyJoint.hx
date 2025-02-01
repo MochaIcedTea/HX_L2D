@@ -27,17 +27,17 @@ extern class PulleyJoint extends Joint
 }
 
 @:multiReturn
-extern class PulleyJointGetMaxLengthsResult
-{
-	var len1 : Float;
-	var len2 : Float;
-}
-
-@:multiReturn
 extern class PulleyJointGetGroundAnchorsResult
 {
 	var a1x : Float;
 	var a1y : Float;
 	var a2x : Float;
 	var a2y : Float;
+}
+
+@:multiReturn
+extern class PulleyJointGetMaxLengthsResult
+{
+	var len1 : Float;
+	var len2 : Float;
 }

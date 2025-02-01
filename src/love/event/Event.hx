@@ -1,5 +1,5 @@
 package love.event;
-@:enum
+enum
 abstract Event (String)
 {
 	var Focus = "focus";

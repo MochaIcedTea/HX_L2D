@@ -1,5 +1,5 @@
 package love.keyboard;
-@:enum
+enum
 abstract KeyConstant (String)
 {
 	var A = "a";

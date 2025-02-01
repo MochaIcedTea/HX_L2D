@@ -1,5 +1,5 @@
 package love.physics;
-@:enum
+enum
 abstract BodyType (String)
 {
 	var Static = "static";

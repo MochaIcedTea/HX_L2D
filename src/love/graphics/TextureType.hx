@@ -1,5 +1,5 @@
 package love.graphics;
-@:enum
+enum
 abstract TextureType (String)
 {
 	var 2d = "2d";

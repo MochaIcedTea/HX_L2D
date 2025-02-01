@@ -1,5 +1,5 @@
 package love.joystick;
-@:enum
+enum
 abstract GamepadAxis (String)
 {
 	var Leftx = "leftx";

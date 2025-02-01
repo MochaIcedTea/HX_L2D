@@ -1,5 +1,5 @@
 package love.graphics;
-@:enum
+enum
 abstract StencilAction (String)
 {
 	var Replace = "replace";

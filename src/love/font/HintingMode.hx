@@ -1,5 +1,5 @@
 package love.font;
-@:enum
+enum
 abstract HintingMode (String)
 {
 	var Normal = "normal";
