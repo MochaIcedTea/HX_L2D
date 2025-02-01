@@ -298,36 +298,6 @@ extern class GraphicsModule
 }
 
 @:multiReturn
-extern class GraphicsModuleGetColorMaskResult
-{
-	var r : Bool;
-	var g : Bool;
-	var b : Bool;
-	var a : Bool;
-}
-
-@:multiReturn
-extern class GraphicsModuleInverseTransformPointResult
-{
-	var globalX : Float;
-	var globalY : Float;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetDimensionsResult
-{
-	var width : Float;
-	var height : Float;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetPixelDimensionsResult
-{
-	var pixelwidth : Float;
-	var pixelheight : Float;
-}
-
-@:multiReturn
 extern class GraphicsModuleGetBackgroundColorResult
 {
 	var r : Float;
@@ -337,29 +307,12 @@ extern class GraphicsModuleGetBackgroundColorResult
 }
 
 @:multiReturn
-extern class GraphicsModuleGetDefaultFilterResult
-{
-	var min : FilterMode;
-	var mag : FilterMode;
-	var anisotropy : Float;
-}
-
-@:multiReturn
 extern class GraphicsModuleGetScissorResult
 {
 	var x : Float;
 	var y : Float;
 	var width : Float;
 	var height : Float;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetRendererInfoResult
-{
-	var name : String;
-	var version : String;
-	var vendor : String;
-	var device : String;
 }
 
 @:multiReturn
@@ -377,6 +330,29 @@ extern class GraphicsModuleTransformPointResult
 }
 
 @:multiReturn
+extern class GraphicsModuleGetDimensionsResult
+{
+	var width : Float;
+	var height : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetColorMaskResult
+{
+	var r : Bool;
+	var g : Bool;
+	var b : Bool;
+	var a : Bool;
+}
+
+@:multiReturn
+extern class GraphicsModuleInverseTransformPointResult
+{
+	var globalX : Float;
+	var globalY : Float;
+}
+
+@:multiReturn
 extern class GraphicsModuleGetStencilTestResult
 {
 	var comparemode : CompareMode;
@@ -384,10 +360,27 @@ extern class GraphicsModuleGetStencilTestResult
 }
 
 @:multiReturn
-extern class GraphicsModuleGetBlendModeResult
+extern class GraphicsModuleGetDefaultFilterResult
 {
-	var mode : BlendMode;
-	var alphamode : BlendAlphaMode;
+	var min : FilterMode;
+	var mag : FilterMode;
+	var anisotropy : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetRendererInfoResult
+{
+	var name : String;
+	var version : String;
+	var vendor : String;
+	var device : String;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetPixelDimensionsResult
+{
+	var pixelwidth : Float;
+	var pixelheight : Float;
 }
 
 @:multiReturn
@@ -404,4 +397,11 @@ extern class GraphicsModuleGetColorResult
 	var g : Float;
 	var b : Float;
 	var a : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetBlendModeResult
+{
+	var mode : BlendMode;
+	var alphamode : BlendAlphaMode;
 }
