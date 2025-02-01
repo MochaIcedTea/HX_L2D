@@ -298,20 +298,6 @@ extern class GraphicsModule
 }
 
 @:multiReturn
-extern class GraphicsModuleValidateShaderResult
-{
-	var status : Bool;
-	var message : String;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetDimensionsResult
-{
-	var width : Float;
-	var height : Float;
-}
-
-@:multiReturn
 extern class GraphicsModuleTransformPointResult
 {
 	var screenX : Float;
@@ -319,12 +305,10 @@ extern class GraphicsModuleTransformPointResult
 }
 
 @:multiReturn
-extern class GraphicsModuleGetColorResult
+extern class GraphicsModuleGetPixelDimensionsResult
 {
-	var r : Float;
-	var g : Float;
-	var b : Float;
-	var a : Float;
+	var pixelwidth : Float;
+	var pixelheight : Float;
 }
 
 @:multiReturn
@@ -335,26 +319,12 @@ extern class GraphicsModuleInverseTransformPointResult
 }
 
 @:multiReturn
-extern class GraphicsModuleGetDepthModeResult
+extern class GraphicsModuleGetColorMaskResult
 {
-	var comparemode : CompareMode;
-	var write : Bool;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetScissorResult
-{
-	var x : Float;
-	var y : Float;
-	var width : Float;
-	var height : Float;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetPixelDimensionsResult
-{
-	var pixelwidth : Float;
-	var pixelheight : Float;
+	var r : Bool;
+	var g : Bool;
+	var b : Bool;
+	var a : Bool;
 }
 
 @:multiReturn
@@ -375,10 +345,51 @@ extern class GraphicsModuleGetDefaultFilterResult
 }
 
 @:multiReturn
+extern class GraphicsModuleGetDepthModeResult
+{
+	var comparemode : CompareMode;
+	var write : Bool;
+}
+
+@:multiReturn
 extern class GraphicsModuleGetBlendModeResult
 {
 	var mode : BlendMode;
 	var alphamode : BlendAlphaMode;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetColorResult
+{
+	var r : Float;
+	var g : Float;
+	var b : Float;
+	var a : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetBackgroundColorResult
+{
+	var r : Float;
+	var g : Float;
+	var b : Float;
+	var a : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetScissorResult
+{
+	var x : Float;
+	var y : Float;
+	var width : Float;
+	var height : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleValidateShaderResult
+{
+	var status : Bool;
+	var message : String;
 }
 
 @:multiReturn
@@ -389,19 +400,8 @@ extern class GraphicsModuleGetStencilTestResult
 }
 
 @:multiReturn
-extern class GraphicsModuleGetColorMaskResult
+extern class GraphicsModuleGetDimensionsResult
 {
-	var r : Bool;
-	var g : Bool;
-	var b : Bool;
-	var a : Bool;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetBackgroundColorResult
-{
-	var r : Float;
-	var g : Float;
-	var b : Float;
-	var a : Float;
+	var width : Float;
+	var height : Float;
 }

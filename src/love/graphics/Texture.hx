@@ -52,6 +52,22 @@ extern class Texture extends Drawable
 }
 
 @:multiReturn
+extern class TextureGetWrapResult
+{
+	var horiz : WrapMode;
+	var vert : WrapMode;
+	var depth : WrapMode;
+}
+
+@:multiReturn
+extern class TextureGetFilterResult
+{
+	var min : FilterMode;
+	var mag : FilterMode;
+	var anisotropy : Float;
+}
+
+@:multiReturn
 extern class TextureGetPixelDimensionsResult
 {
 	var pixelwidth : Float;
@@ -70,20 +86,4 @@ extern class TextureGetMipmapFilterResult
 {
 	var mode : FilterMode;
 	var sharpness : Float;
-}
-
-@:multiReturn
-extern class TextureGetFilterResult
-{
-	var min : FilterMode;
-	var mag : FilterMode;
-	var anisotropy : Float;
-}
-
-@:multiReturn
-extern class TextureGetWrapResult
-{
-	var horiz : WrapMode;
-	var vert : WrapMode;
-	var depth : WrapMode;
 }

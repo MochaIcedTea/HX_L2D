@@ -25,6 +25,20 @@ extern class ChainShape extends Shape
 }
 
 @:multiReturn
+extern class ChainShapeGetNextVertexResult
+{
+	var x : Float;
+	var y : Float;
+}
+
+@:multiReturn
+extern class ChainShapeGetPreviousVertexResult
+{
+	var x : Float;
+	var y : Float;
+}
+
+@:multiReturn
 extern class ChainShapeGetPointsResult
 {
 	var x1 : Float;
@@ -34,21 +48,7 @@ extern class ChainShapeGetPointsResult
 }
 
 @:multiReturn
-extern class ChainShapeGetNextVertexResult
-{
-	var x : Float;
-	var y : Float;
-}
-
-@:multiReturn
 extern class ChainShapeGetPointResult
-{
-	var x : Float;
-	var y : Float;
-}
-
-@:multiReturn
-extern class ChainShapeGetPreviousVertexResult
 {
 	var x : Float;
 	var y : Float;
