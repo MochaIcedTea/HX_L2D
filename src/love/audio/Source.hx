@@ -93,7 +93,7 @@ extern class Source extends Object
 }
 
 @:multiReturn
-extern class SourceGetPositionResult
+extern class SourceGetVelocityResult
 {
 	var x : Float;
 	var y : Float;
@@ -101,7 +101,7 @@ extern class SourceGetPositionResult
 }
 
 @:multiReturn
-extern class SourceGetDirectionResult
+extern class SourceGetPositionResult
 {
 	var x : Float;
 	var y : Float;
@@ -131,7 +131,7 @@ extern class SourceGetVolumeLimitsResult
 }
 
 @:multiReturn
-extern class SourceGetVelocityResult
+extern class SourceGetDirectionResult
 {
 	var x : Float;
 	var y : Float;

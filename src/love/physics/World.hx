@@ -51,17 +51,17 @@ extern class World extends Object
 }
 
 @:multiReturn
+extern class WorldGetGravityResult
+{
+	var x : Float;
+	var y : Float;
+}
+
+@:multiReturn
 extern class WorldGetCallbacksResult
 {
 	var beginContact : Dynamic;
 	var endContact : Dynamic;
 	var preSolve : Dynamic;
 	var postSolve : Dynamic;
-}
-
-@:multiReturn
-extern class WorldGetGravityResult
-{
-	var x : Float;
-	var y : Float;
 }

@@ -67,6 +67,13 @@ extern class MeshGetVertexAttributeResult
 }
 
 @:multiReturn
+extern class MeshGetDrawRangeResult
+{
+	var min : Float;
+	var max : Float;
+}
+
+@:multiReturn
 extern class MeshGetVertexResult
 {
 	var x : Float;
@@ -77,11 +84,4 @@ extern class MeshGetVertexResult
 	var g : Float;
 	var b : Float;
 	var a : Float;
-}
-
-@:multiReturn
-extern class MeshGetDrawRangeResult
-{
-	var min : Float;
-	var max : Float;
 }
