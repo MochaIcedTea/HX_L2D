@@ -60,13 +60,6 @@ extern class Mesh extends Drawable
 }
 
 @:multiReturn
-extern class MeshGetDrawRangeResult
-{
-	var min : Float;
-	var max : Float;
-}
-
-@:multiReturn
 extern class MeshGetVertexResult
 {
 	var x : Float;
@@ -77,6 +70,13 @@ extern class MeshGetVertexResult
 	var g : Float;
 	var b : Float;
 	var a : Float;
+}
+
+@:multiReturn
+extern class MeshGetDrawRangeResult
+{
+	var min : Float;
+	var max : Float;
 }
 
 @:multiReturn

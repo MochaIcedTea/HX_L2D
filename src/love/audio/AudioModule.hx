@@ -88,7 +88,7 @@ extern class AudioModuleGetOrientationResult
 }
 
 @:multiReturn
-extern class AudioModuleGetVelocityResult
+extern class AudioModuleGetPositionResult
 {
 	var x : Float;
 	var y : Float;
@@ -96,7 +96,7 @@ extern class AudioModuleGetVelocityResult
 }
 
 @:multiReturn
-extern class AudioModuleGetPositionResult
+extern class AudioModuleGetVelocityResult
 {
 	var x : Float;
 	var y : Float;

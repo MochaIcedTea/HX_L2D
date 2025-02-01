@@ -19,6 +19,13 @@ extern class EdgeShape extends Shape
 }
 
 @:multiReturn
+extern class EdgeShapeGetNextVertexResult
+{
+	var x : Float;
+	var y : Float;
+}
+
+@:multiReturn
 extern class EdgeShapeGetPointsResult
 {
 	var x1 : Float;
@@ -29,13 +36,6 @@ extern class EdgeShapeGetPointsResult
 
 @:multiReturn
 extern class EdgeShapeGetPreviousVertexResult
-{
-	var x : Float;
-	var y : Float;
-}
-
-@:multiReturn
-extern class EdgeShapeGetNextVertexResult
 {
 	var x : Float;
 	var y : Float;

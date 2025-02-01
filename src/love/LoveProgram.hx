@@ -1,4 +1,4 @@
-package haxelibstuffs.src.love;
+package src.love;
 
 import lua.Table;
 import love.Love;

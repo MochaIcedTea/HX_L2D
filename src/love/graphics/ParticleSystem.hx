@@ -131,17 +131,18 @@ extern class ParticleSystem extends Drawable
 }
 
 @:multiReturn
-extern class ParticleSystemGetLinearDampingResult
+extern class ParticleSystemGetRotationResult
 {
 	var min : Float;
 	var max : Float;
 }
 
 @:multiReturn
-extern class ParticleSystemGetPositionResult
+extern class ParticleSystemGetSizesResult
 {
-	var x : Float;
-	var y : Float;
+	var size1 : Float;
+	var size2 : Float;
+	var size8 : Float;
 }
 
 @:multiReturn
@@ -153,17 +154,13 @@ extern class ParticleSystemGetSpinResult
 }
 
 @:multiReturn
-extern class ParticleSystemGetTangentialAccelerationResult
+extern class ParticleSystemGetEmissionAreaResult
 {
-	var min : Float;
-	var max : Float;
-}
-
-@:multiReturn
-extern class ParticleSystemGetRadialAccelerationResult
-{
-	var min : Float;
-	var max : Float;
+	var distribution : AreaSpreadDistribution;
+	var dx : Float;
+	var dy : Float;
+	var angle : Float;
+	var directionRelativeToCenter : Bool;
 }
 
 @:multiReturn
@@ -191,15 +188,42 @@ extern class ParticleSystemGetOffsetResult
 }
 
 @:multiReturn
-extern class ParticleSystemGetSizesResult
+extern class ParticleSystemGetParticleLifetimeResult
 {
-	var size1 : Float;
-	var size2 : Float;
-	var size8 : Float;
+	var min : Float;
+	var max : Float;
 }
 
 @:multiReturn
-extern class ParticleSystemGetRotationResult
+extern class ParticleSystemGetRadialAccelerationResult
+{
+	var min : Float;
+	var max : Float;
+}
+
+@:multiReturn
+extern class ParticleSystemGetTangentialAccelerationResult
+{
+	var min : Float;
+	var max : Float;
+}
+
+@:multiReturn
+extern class ParticleSystemGetPositionResult
+{
+	var x : Float;
+	var y : Float;
+}
+
+@:multiReturn
+extern class ParticleSystemGetSpeedResult
+{
+	var min : Float;
+	var max : Float;
+}
+
+@:multiReturn
+extern class ParticleSystemGetLinearDampingResult
 {
 	var min : Float;
 	var max : Float;
@@ -212,28 +236,4 @@ extern class ParticleSystemGetLinearAccelerationResult
 	var ymin : Float;
 	var xmax : Float;
 	var ymax : Float;
-}
-
-@:multiReturn
-extern class ParticleSystemGetParticleLifetimeResult
-{
-	var min : Float;
-	var max : Float;
-}
-
-@:multiReturn
-extern class ParticleSystemGetSpeedResult
-{
-	var min : Float;
-	var max : Float;
-}
-
-@:multiReturn
-extern class ParticleSystemGetEmissionAreaResult
-{
-	var distribution : AreaSpreadDistribution;
-	var dx : Float;
-	var dy : Float;
-	var angle : Float;
-	var directionRelativeToCenter : Bool;
 }
