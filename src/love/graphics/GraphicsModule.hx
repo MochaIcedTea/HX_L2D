@@ -298,49 +298,10 @@ extern class GraphicsModule
 }
 
 @:multiReturn
-extern class GraphicsModuleTransformPointResult
+extern class GraphicsModuleGetBlendModeResult
 {
-	var screenX : Float;
-	var screenY : Float;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetColorMaskResult
-{
-	var r : Bool;
-	var g : Bool;
-	var b : Bool;
-	var a : Bool;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetStencilTestResult
-{
-	var comparemode : CompareMode;
-	var comparevalue : Float;
-}
-
-@:multiReturn
-extern class GraphicsModuleValidateShaderResult
-{
-	var status : Bool;
-	var message : String;
-}
-
-@:multiReturn
-extern class GraphicsModuleInverseTransformPointResult
-{
-	var globalX : Float;
-	var globalY : Float;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetScissorResult
-{
-	var x : Float;
-	var y : Float;
-	var width : Float;
-	var height : Float;
+	var mode : BlendMode;
+	var alphamode : BlendAlphaMode;
 }
 
 @:multiReturn
@@ -353,19 +314,33 @@ extern class GraphicsModuleGetBackgroundColorResult
 }
 
 @:multiReturn
-extern class GraphicsModuleGetRendererInfoResult
+extern class GraphicsModuleGetColorMaskResult
 {
-	var name : String;
-	var version : String;
-	var vendor : String;
-	var device : String;
+	var r : Bool;
+	var g : Bool;
+	var b : Bool;
+	var a : Bool;
 }
 
 @:multiReturn
-extern class GraphicsModuleGetDepthModeResult
+extern class GraphicsModuleInverseTransformPointResult
 {
-	var comparemode : CompareMode;
-	var write : Bool;
+	var globalX : Float;
+	var globalY : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleValidateShaderResult
+{
+	var status : Bool;
+	var message : String;
+}
+
+@:multiReturn
+extern class GraphicsModuleTransformPointResult
+{
+	var screenX : Float;
+	var screenY : Float;
 }
 
 @:multiReturn
@@ -376,10 +351,17 @@ extern class GraphicsModuleGetDimensionsResult
 }
 
 @:multiReturn
-extern class GraphicsModuleGetBlendModeResult
+extern class GraphicsModuleGetPixelDimensionsResult
 {
-	var mode : BlendMode;
-	var alphamode : BlendAlphaMode;
+	var pixelwidth : Float;
+	var pixelheight : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetDepthModeResult
+{
+	var comparemode : CompareMode;
+	var write : Bool;
 }
 
 @:multiReturn
@@ -392,10 +374,21 @@ extern class GraphicsModuleGetColorResult
 }
 
 @:multiReturn
-extern class GraphicsModuleGetPixelDimensionsResult
+extern class GraphicsModuleGetScissorResult
 {
-	var pixelwidth : Float;
-	var pixelheight : Float;
+	var x : Float;
+	var y : Float;
+	var width : Float;
+	var height : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetRendererInfoResult
+{
+	var name : String;
+	var version : String;
+	var vendor : String;
+	var device : String;
 }
 
 @:multiReturn
@@ -404,4 +397,11 @@ extern class GraphicsModuleGetDefaultFilterResult
 	var min : FilterMode;
 	var mag : FilterMode;
 	var anisotropy : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetStencilTestResult
+{
+	var comparemode : CompareMode;
+	var comparevalue : Float;
 }

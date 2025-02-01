@@ -40,16 +40,16 @@ extern class Font extends Object
 }
 
 @:multiReturn
+extern class FontGetWrapResult
+{
+	var width : Float;
+	var wrappedtext : Table<Dynamic,Dynamic>;
+}
+
+@:multiReturn
 extern class FontGetFilterResult
 {
 	var min : FilterMode;
 	var mag : FilterMode;
 	var anisotropy : Float;
-}
-
-@:multiReturn
-extern class FontGetWrapResult
-{
-	var width : Float;
-	var wrappedtext : Table<Dynamic,Dynamic>;
 }

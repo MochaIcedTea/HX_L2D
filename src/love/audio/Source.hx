@@ -101,10 +101,11 @@ extern class SourceGetConeResult
 }
 
 @:multiReturn
-extern class SourceGetAttenuationDistancesResult
+extern class SourceGetDirectionResult
 {
-	var ref : Float;
-	var max : Float;
+	var x : Float;
+	var y : Float;
+	var z : Float;
 }
 
 @:multiReturn
@@ -123,7 +124,7 @@ extern class SourceGetVolumeLimitsResult
 }
 
 @:multiReturn
-extern class SourceGetDirectionResult
+extern class SourceGetPositionResult
 {
 	var x : Float;
 	var y : Float;
@@ -131,9 +132,8 @@ extern class SourceGetDirectionResult
 }
 
 @:multiReturn
-extern class SourceGetPositionResult
+extern class SourceGetAttenuationDistancesResult
 {
-	var x : Float;
-	var y : Float;
-	var z : Float;
+	var ref : Float;
+	var max : Float;
 }

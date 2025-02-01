@@ -49,23 +49,9 @@ extern class FileSetBufferResult
 }
 
 @:multiReturn
-extern class FileWriteResult
+extern class FileReadResult
 {
-	var success : Bool;
-	var errorstr : String;
-}
-
-@:multiReturn
-extern class FileOpenResult
-{
-	var ok : Bool;
-	var err : String;
-}
-
-@:multiReturn
-extern class FileGetBufferResult
-{
-	var mode : BufferMode;
+	var contents : FileData or string;
 	var size : Float;
 }
 
@@ -77,8 +63,22 @@ extern class FileFlushResult
 }
 
 @:multiReturn
-extern class FileReadResult
+extern class FileGetBufferResult
 {
-	var contents : FileData or string;
+	var mode : BufferMode;
 	var size : Float;
+}
+
+@:multiReturn
+extern class FileOpenResult
+{
+	var ok : Bool;
+	var err : String;
+}
+
+@:multiReturn
+extern class FileWriteResult
+{
+	var success : Bool;
+	var errorstr : String;
 }

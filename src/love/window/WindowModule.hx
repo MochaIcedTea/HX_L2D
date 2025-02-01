@@ -93,6 +93,20 @@ extern class WindowModuleGetFullscreenResult
 }
 
 @:multiReturn
+extern class WindowModuleFromPixelsResult
+{
+	var x : Float;
+	var y : Float;
+}
+
+@:multiReturn
+extern class WindowModuleToPixelsResult
+{
+	var px : Float;
+	var py : Float;
+}
+
+@:multiReturn
 extern class WindowModuleGetSafeAreaResult
 {
 	var x : Float;
@@ -122,18 +136,4 @@ extern class WindowModuleGetModeResult
 	var width : Float;
 	var height : Float;
 	var flags : Table<Dynamic,Dynamic>;
-}
-
-@:multiReturn
-extern class WindowModuleFromPixelsResult
-{
-	var x : Float;
-	var y : Float;
-}
-
-@:multiReturn
-extern class WindowModuleToPixelsResult
-{
-	var px : Float;
-	var py : Float;
 }
