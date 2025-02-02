@@ -307,6 +307,24 @@ extern class GraphicsModuleGetColorResult
 }
 
 @:multiReturn
+extern class GraphicsModuleGetBackgroundColorResult
+{
+	var r : Float;
+	var g : Float;
+	var b : Float;
+	var a : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetScissorResult
+{
+	var x : Float;
+	var y : Float;
+	var width : Float;
+	var height : Float;
+}
+
+@:multiReturn
 extern class GraphicsModuleValidateShaderResult
 {
 	var status : Bool;
@@ -314,10 +332,10 @@ extern class GraphicsModuleValidateShaderResult
 }
 
 @:multiReturn
-extern class GraphicsModuleGetDimensionsResult
+extern class GraphicsModuleGetBlendModeResult
 {
-	var width : Float;
-	var height : Float;
+	var mode : BlendMode;
+	var alphamode : BlendAlphaMode;
 }
 
 @:multiReturn
@@ -328,17 +346,17 @@ extern class GraphicsModuleTransformPointResult
 }
 
 @:multiReturn
+extern class GraphicsModuleInverseTransformPointResult
+{
+	var globalX : Float;
+	var globalY : Float;
+}
+
+@:multiReturn
 extern class GraphicsModuleGetPixelDimensionsResult
 {
 	var pixelwidth : Float;
 	var pixelheight : Float;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetBlendModeResult
-{
-	var mode : BlendMode;
-	var alphamode : BlendAlphaMode;
 }
 
 @:multiReturn
@@ -365,23 +383,6 @@ extern class GraphicsModuleGetStencilTestResult
 }
 
 @:multiReturn
-extern class GraphicsModuleGetDefaultFilterResult
-{
-	var min : FilterMode;
-	var mag : FilterMode;
-	var anisotropy : Float;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetScissorResult
-{
-	var x : Float;
-	var y : Float;
-	var width : Float;
-	var height : Float;
-}
-
-@:multiReturn
 extern class GraphicsModuleGetColorMaskResult
 {
 	var r : Bool;
@@ -391,17 +392,16 @@ extern class GraphicsModuleGetColorMaskResult
 }
 
 @:multiReturn
-extern class GraphicsModuleGetBackgroundColorResult
+extern class GraphicsModuleGetDimensionsResult
 {
-	var r : Float;
-	var g : Float;
-	var b : Float;
-	var a : Float;
+	var width : Float;
+	var height : Float;
 }
 
 @:multiReturn
-extern class GraphicsModuleInverseTransformPointResult
+extern class GraphicsModuleGetDefaultFilterResult
 {
-	var globalX : Float;
-	var globalY : Float;
+	var min : FilterMode;
+	var mag : FilterMode;
+	var anisotropy : Float;
 }

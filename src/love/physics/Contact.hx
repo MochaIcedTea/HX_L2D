@@ -35,13 +35,6 @@ extern class Contact extends Object
 }
 
 @:multiReturn
-extern class ContactGetNormalResult
-{
-	var nx : Float;
-	var ny : Float;
-}
-
-@:multiReturn
 extern class ContactGetPositionsResult
 {
 	var x1 : Float;
@@ -51,10 +44,10 @@ extern class ContactGetPositionsResult
 }
 
 @:multiReturn
-extern class ContactGetFixturesResult
+extern class ContactGetNormalResult
 {
-	var fixtureA : Fixture;
-	var fixtureB : Fixture;
+	var nx : Float;
+	var ny : Float;
 }
 
 @:multiReturn
@@ -62,4 +55,11 @@ extern class ContactGetChildrenResult
 {
 	var indexA : Float;
 	var indexB : Float;
+}
+
+@:multiReturn
+extern class ContactGetFixturesResult
+{
+	var fixtureA : Fixture;
+	var fixtureB : Fixture;
 }

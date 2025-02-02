@@ -42,6 +42,13 @@ extern class File extends Object
 }
 
 @:multiReturn
+extern class FileReadResult
+{
+	var contents : Dynamic;
+	var size : Float;
+}
+
+@:multiReturn
 extern class FileSetBufferResult
 {
 	var success : Bool;
@@ -49,16 +56,16 @@ extern class FileSetBufferResult
 }
 
 @:multiReturn
-extern class FileFlushResult
+extern class FileOpenResult
 {
-	var success : Bool;
+	var ok : Bool;
 	var err : String;
 }
 
 @:multiReturn
-extern class FileOpenResult
+extern class FileFlushResult
 {
-	var ok : Bool;
+	var success : Bool;
 	var err : String;
 }
 
@@ -74,11 +81,4 @@ extern class FileWriteResult
 {
 	var success : Bool;
 	var errorstr : String;
-}
-
-@:multiReturn
-extern class FileReadResult
-{
-	var contents : Dynamic;
-	var size : Float;
 }
