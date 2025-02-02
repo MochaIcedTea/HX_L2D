@@ -61,14 +61,6 @@ extern class Fixture extends Object
 }
 
 @:multiReturn
-extern class FixtureRayCastResult
-{
-	var xn : Float;
-	var yn : Float;
-	var fraction : Float;
-}
-
-@:multiReturn
 extern class FixtureGetMassDataResult
 {
 	var x : Float;
@@ -92,4 +84,12 @@ extern class FixtureGetFilterDataResult
 	var categories : Float;
 	var mask : Float;
 	var group : Float;
+}
+
+@:multiReturn
+extern class FixtureRayCastResult
+{
+	var xn : Float;
+	var yn : Float;
+	var fraction : Float;
 }

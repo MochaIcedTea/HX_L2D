@@ -298,12 +298,48 @@ extern class GraphicsModule
 }
 
 @:multiReturn
+extern class GraphicsModuleGetDefaultFilterResult
+{
+	var min : FilterMode;
+	var mag : FilterMode;
+	var anisotropy : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleTransformPointResult
+{
+	var screenX : Float;
+	var screenY : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetDepthModeResult
+{
+	var comparemode : CompareMode;
+	var write : Bool;
+}
+
+@:multiReturn
 extern class GraphicsModuleGetColorResult
 {
 	var r : Float;
 	var g : Float;
 	var b : Float;
 	var a : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetPixelDimensionsResult
+{
+	var pixelwidth : Float;
+	var pixelheight : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetBlendModeResult
+{
+	var mode : BlendMode;
+	var alphamode : BlendAlphaMode;
 }
 
 @:multiReturn
@@ -316,33 +352,19 @@ extern class GraphicsModuleGetBackgroundColorResult
 }
 
 @:multiReturn
+extern class GraphicsModuleGetStencilTestResult
+{
+	var comparemode : CompareMode;
+	var comparevalue : Float;
+}
+
+@:multiReturn
 extern class GraphicsModuleGetScissorResult
 {
 	var x : Float;
 	var y : Float;
 	var width : Float;
 	var height : Float;
-}
-
-@:multiReturn
-extern class GraphicsModuleValidateShaderResult
-{
-	var status : Bool;
-	var message : String;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetBlendModeResult
-{
-	var mode : BlendMode;
-	var alphamode : BlendAlphaMode;
-}
-
-@:multiReturn
-extern class GraphicsModuleTransformPointResult
-{
-	var screenX : Float;
-	var screenY : Float;
 }
 
 @:multiReturn
@@ -353,17 +375,10 @@ extern class GraphicsModuleInverseTransformPointResult
 }
 
 @:multiReturn
-extern class GraphicsModuleGetPixelDimensionsResult
+extern class GraphicsModuleValidateShaderResult
 {
-	var pixelwidth : Float;
-	var pixelheight : Float;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetDepthModeResult
-{
-	var comparemode : CompareMode;
-	var write : Bool;
+	var status : Bool;
+	var message : String;
 }
 
 @:multiReturn
@@ -376,10 +391,10 @@ extern class GraphicsModuleGetRendererInfoResult
 }
 
 @:multiReturn
-extern class GraphicsModuleGetStencilTestResult
+extern class GraphicsModuleGetDimensionsResult
 {
-	var comparemode : CompareMode;
-	var comparevalue : Float;
+	var width : Float;
+	var height : Float;
 }
 
 @:multiReturn
@@ -389,19 +404,4 @@ extern class GraphicsModuleGetColorMaskResult
 	var g : Bool;
 	var b : Bool;
 	var a : Bool;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetDimensionsResult
-{
-	var width : Float;
-	var height : Float;
-}
-
-@:multiReturn
-extern class GraphicsModuleGetDefaultFilterResult
-{
-	var min : FilterMode;
-	var mag : FilterMode;
-	var anisotropy : Float;
 }

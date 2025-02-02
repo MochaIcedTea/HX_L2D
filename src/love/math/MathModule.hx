@@ -58,15 +58,6 @@ extern class MathModule
 }
 
 @:multiReturn
-extern class MathModuleColorFromBytesResult
-{
-	var r : Float;
-	var g : Float;
-	var b : Float;
-	var a : Float;
-}
-
-@:multiReturn
 extern class MathModuleGetRandomSeedResult
 {
 	var low : Float;
@@ -74,12 +65,12 @@ extern class MathModuleGetRandomSeedResult
 }
 
 @:multiReturn
-extern class MathModuleColorToBytesResult
+extern class MathModuleColorFromBytesResult
 {
-	var rb : Float;
-	var gb : Float;
-	var bb : Float;
-	var ab : Float;
+	var r : Float;
+	var g : Float;
+	var b : Float;
+	var a : Float;
 }
 
 @:multiReturn
@@ -96,4 +87,13 @@ extern class MathModuleLinearToGammaResult
 	var cr : Float;
 	var cg : Float;
 	var cb : Float;
+}
+
+@:multiReturn
+extern class MathModuleColorToBytesResult
+{
+	var rb : Float;
+	var gb : Float;
+	var bb : Float;
+	var ab : Float;
 }
