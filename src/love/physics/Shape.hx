@@ -23,20 +23,20 @@ extern class Shape extends Object
 }
 
 @:multiReturn
+extern class ShapeRayCastResult
+{
+	var xn : Float;
+	var yn : Float;
+	var fraction : Float;
+}
+
+@:multiReturn
 extern class ShapeComputeAABBResult
 {
 	var topLeftX : Float;
 	var topLeftY : Float;
 	var bottomRightX : Float;
 	var bottomRightY : Float;
-}
-
-@:multiReturn
-extern class ShapeRayCastResult
-{
-	var xn : Float;
-	var yn : Float;
-	var fraction : Float;
 }
 
 @:multiReturn

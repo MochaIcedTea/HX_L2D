@@ -135,6 +135,13 @@ extern class Body extends Object
 }
 
 @:multiReturn
+extern class BodyGetLocalVectorResult
+{
+	var localX : Float;
+	var localY : Float;
+}
+
+@:multiReturn
 extern class BodyGetWorldCenterResult
 {
 	var x : Float;
@@ -142,17 +149,17 @@ extern class BodyGetWorldCenterResult
 }
 
 @:multiReturn
-extern class BodyGetWorldPointResult
+extern class BodyGetLocalCenterResult
 {
-	var worldX : Float;
-	var worldY : Float;
+	var x : Float;
+	var y : Float;
 }
 
 @:multiReturn
-extern class BodyGetLocalVectorResult
+extern class BodyGetLinearVelocityFromLocalPointResult
 {
-	var localX : Float;
-	var localY : Float;
+	var vx : Float;
+	var vy : Float;
 }
 
 @:multiReturn
@@ -179,40 +186,10 @@ extern class BodyGetWorldVectorResult
 }
 
 @:multiReturn
-extern class BodyGetLinearVelocityFromWorldPointResult
-{
-	var vx : Float;
-	var vy : Float;
-}
-
-@:multiReturn
-extern class BodyGetPositionResult
-{
-	var x : Float;
-	var y : Float;
-}
-
-@:multiReturn
 extern class BodyGetLinearVelocityResult
 {
 	var x : Float;
 	var y : Float;
-}
-
-@:multiReturn
-extern class BodyGetLocalCenterResult
-{
-	var x : Float;
-	var y : Float;
-}
-
-@:multiReturn
-extern class BodyGetMassDataResult
-{
-	var x : Float;
-	var y : Float;
-	var mass : Float;
-	var inertia : Float;
 }
 
 @:multiReturn
@@ -225,10 +202,19 @@ extern class BodyGetWorldPointsResult
 }
 
 @:multiReturn
-extern class BodyGetLinearVelocityFromLocalPointResult
+extern class BodyGetWorldPointResult
 {
-	var vx : Float;
-	var vy : Float;
+	var worldX : Float;
+	var worldY : Float;
+}
+
+@:multiReturn
+extern class BodyGetMassDataResult
+{
+	var x : Float;
+	var y : Float;
+	var mass : Float;
+	var inertia : Float;
 }
 
 @:multiReturn
@@ -237,4 +223,18 @@ extern class BodyGetTransformResult
 	var x : Float;
 	var y : Float;
 	var angle : Float;
+}
+
+@:multiReturn
+extern class BodyGetLinearVelocityFromWorldPointResult
+{
+	var vx : Float;
+	var vy : Float;
+}
+
+@:multiReturn
+extern class BodyGetPositionResult
+{
+	var x : Float;
+	var y : Float;
 }

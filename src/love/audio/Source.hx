@@ -93,9 +93,9 @@ extern class Source extends Object
 }
 
 @:multiReturn
-extern class SourceGetVolumeLimitsResult
+extern class SourceGetAttenuationDistancesResult
 {
-	var min : Float;
+	var ref : Float;
 	var max : Float;
 }
 
@@ -116,18 +116,18 @@ extern class SourceGetVelocityResult
 }
 
 @:multiReturn
+extern class SourceGetVolumeLimitsResult
+{
+	var min : Float;
+	var max : Float;
+}
+
+@:multiReturn
 extern class SourceGetConeResult
 {
 	var innerAngle : Float;
 	var outerAngle : Float;
 	var outerVolume : Float;
-}
-
-@:multiReturn
-extern class SourceGetAttenuationDistancesResult
-{
-	var ref : Float;
-	var max : Float;
 }
 
 @:multiReturn
