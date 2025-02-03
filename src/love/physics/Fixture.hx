@@ -61,21 +61,21 @@ extern class Fixture extends Object
 }
 
 @:multiReturn
-extern class FixtureGetMassDataResult
-{
-	var x : Float;
-	var y : Float;
-	var mass : Float;
-	var inertia : Float;
-}
-
-@:multiReturn
 extern class FixtureGetBoundingBoxResult
 {
 	var topLeftX : Float;
 	var topLeftY : Float;
 	var bottomRightX : Float;
 	var bottomRightY : Float;
+}
+
+@:multiReturn
+extern class FixtureGetMassDataResult
+{
+	var x : Float;
+	var y : Float;
+	var mass : Float;
+	var inertia : Float;
 }
 
 @:multiReturn

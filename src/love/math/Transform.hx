@@ -61,15 +61,15 @@ extern class TransformGetMatrixResult
 }
 
 @:multiReturn
-extern class TransformInverseTransformPointResult
-{
-	var globalX : Float;
-	var globalY : Float;
-}
-
-@:multiReturn
 extern class TransformTransformPointResult
 {
 	var localX : Float;
 	var localY : Float;
+}
+
+@:multiReturn
+extern class TransformInverseTransformPointResult
+{
+	var globalX : Float;
+	var globalY : Float;
 }

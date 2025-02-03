@@ -52,11 +52,10 @@ extern class Joystick extends Object
 }
 
 @:multiReturn
-extern class JoystickGetAxesResult
+extern class JoystickGetVibrationResult
 {
-	var axisDir1 : Float;
-	var axisDir2 : Float;
-	var axisDirN : Float;
+	var left : Float;
+	var right : Float;
 }
 
 @:multiReturn
@@ -75,10 +74,11 @@ extern class JoystickGetIDResult
 }
 
 @:multiReturn
-extern class JoystickGetVibrationResult
+extern class JoystickGetAxesResult
 {
-	var left : Float;
-	var right : Float;
+	var axisDir1 : Float;
+	var axisDir2 : Float;
+	var axisDirN : Float;
 }
 
 @:multiReturn

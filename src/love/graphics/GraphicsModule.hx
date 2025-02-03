@@ -298,25 +298,19 @@ extern class GraphicsModule
 }
 
 @:multiReturn
-extern class GraphicsModuleGetDefaultFilterResult
-{
-	var min : FilterMode;
-	var mag : FilterMode;
-	var anisotropy : Float;
-}
-
-@:multiReturn
-extern class GraphicsModuleTransformPointResult
-{
-	var screenX : Float;
-	var screenY : Float;
-}
-
-@:multiReturn
 extern class GraphicsModuleGetDepthModeResult
 {
 	var comparemode : CompareMode;
 	var write : Bool;
+}
+
+@:multiReturn
+extern class GraphicsModuleGetColorMaskResult
+{
+	var r : Bool;
+	var g : Bool;
+	var b : Bool;
+	var a : Bool;
 }
 
 @:multiReturn
@@ -329,6 +323,14 @@ extern class GraphicsModuleGetColorResult
 }
 
 @:multiReturn
+extern class GraphicsModuleGetDefaultFilterResult
+{
+	var min : FilterMode;
+	var mag : FilterMode;
+	var anisotropy : Float;
+}
+
+@:multiReturn
 extern class GraphicsModuleGetPixelDimensionsResult
 {
 	var pixelwidth : Float;
@@ -336,26 +338,31 @@ extern class GraphicsModuleGetPixelDimensionsResult
 }
 
 @:multiReturn
-extern class GraphicsModuleGetBlendModeResult
+extern class GraphicsModuleValidateShaderResult
 {
-	var mode : BlendMode;
-	var alphamode : BlendAlphaMode;
+	var status : Bool;
+	var message : String;
 }
 
 @:multiReturn
-extern class GraphicsModuleGetBackgroundColorResult
+extern class GraphicsModuleGetDimensionsResult
 {
-	var r : Float;
-	var g : Float;
-	var b : Float;
-	var a : Float;
+	var width : Float;
+	var height : Float;
 }
 
 @:multiReturn
-extern class GraphicsModuleGetStencilTestResult
+extern class GraphicsModuleTransformPointResult
 {
-	var comparemode : CompareMode;
-	var comparevalue : Float;
+	var screenX : Float;
+	var screenY : Float;
+}
+
+@:multiReturn
+extern class GraphicsModuleInverseTransformPointResult
+{
+	var globalX : Float;
+	var globalY : Float;
 }
 
 @:multiReturn
@@ -368,17 +375,10 @@ extern class GraphicsModuleGetScissorResult
 }
 
 @:multiReturn
-extern class GraphicsModuleInverseTransformPointResult
+extern class GraphicsModuleGetStencilTestResult
 {
-	var globalX : Float;
-	var globalY : Float;
-}
-
-@:multiReturn
-extern class GraphicsModuleValidateShaderResult
-{
-	var status : Bool;
-	var message : String;
+	var comparemode : CompareMode;
+	var comparevalue : Float;
 }
 
 @:multiReturn
@@ -391,17 +391,17 @@ extern class GraphicsModuleGetRendererInfoResult
 }
 
 @:multiReturn
-extern class GraphicsModuleGetDimensionsResult
+extern class GraphicsModuleGetBackgroundColorResult
 {
-	var width : Float;
-	var height : Float;
+	var r : Float;
+	var g : Float;
+	var b : Float;
+	var a : Float;
 }
 
 @:multiReturn
-extern class GraphicsModuleGetColorMaskResult
+extern class GraphicsModuleGetBlendModeResult
 {
-	var r : Bool;
-	var g : Bool;
-	var b : Bool;
-	var a : Bool;
+	var mode : BlendMode;
+	var alphamode : BlendAlphaMode;
 }

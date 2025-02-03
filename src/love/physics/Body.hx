@@ -135,18 +135,10 @@ extern class Body extends Object
 }
 
 @:multiReturn
-extern class BodyGetLinearVelocityResult
+extern class BodyGetLocalCenterResult
 {
 	var x : Float;
 	var y : Float;
-}
-
-@:multiReturn
-extern class BodyGetTransformResult
-{
-	var x : Float;
-	var y : Float;
-	var angle : Float;
 }
 
 @:multiReturn
@@ -159,10 +151,12 @@ extern class BodyGetMassDataResult
 }
 
 @:multiReturn
-extern class BodyGetWorldPointResult
+extern class BodyGetWorldPointsResult
 {
-	var worldX : Float;
-	var worldY : Float;
+	var x1 : Float;
+	var y1 : Float;
+	var x2 : Float;
+	var y2 : Float;
 }
 
 @:multiReturn
@@ -173,17 +167,24 @@ extern class BodyGetWorldVectorResult
 }
 
 @:multiReturn
-extern class BodyGetLocalCenterResult
+extern class BodyGetWorldPointResult
+{
+	var worldX : Float;
+	var worldY : Float;
+}
+
+@:multiReturn
+extern class BodyGetLinearVelocityResult
 {
 	var x : Float;
 	var y : Float;
 }
 
 @:multiReturn
-extern class BodyGetLocalPointResult
+extern class BodyGetWorldCenterResult
 {
-	var localX : Float;
-	var localY : Float;
+	var x : Float;
+	var y : Float;
 }
 
 @:multiReturn
@@ -194,12 +195,10 @@ extern class BodyGetLinearVelocityFromWorldPointResult
 }
 
 @:multiReturn
-extern class BodyGetWorldPointsResult
+extern class BodyGetLocalVectorResult
 {
-	var x1 : Float;
-	var y1 : Float;
-	var x2 : Float;
-	var y2 : Float;
+	var localX : Float;
+	var localY : Float;
 }
 
 @:multiReturn
@@ -212,13 +211,6 @@ extern class BodyGetLocalPointsResult
 }
 
 @:multiReturn
-extern class BodyGetWorldCenterResult
-{
-	var x : Float;
-	var y : Float;
-}
-
-@:multiReturn
 extern class BodyGetPositionResult
 {
 	var x : Float;
@@ -226,15 +218,23 @@ extern class BodyGetPositionResult
 }
 
 @:multiReturn
-extern class BodyGetLocalVectorResult
+extern class BodyGetLinearVelocityFromLocalPointResult
+{
+	var vx : Float;
+	var vy : Float;
+}
+
+@:multiReturn
+extern class BodyGetLocalPointResult
 {
 	var localX : Float;
 	var localY : Float;
 }
 
 @:multiReturn
-extern class BodyGetLinearVelocityFromLocalPointResult
+extern class BodyGetTransformResult
 {
-	var vx : Float;
-	var vy : Float;
+	var x : Float;
+	var y : Float;
+	var angle : Float;
 }
