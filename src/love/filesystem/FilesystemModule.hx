@@ -85,13 +85,6 @@ extern class FilesystemModule
 }
 
 @:multiReturn
-extern class FilesystemModuleWriteResult
-{
-	var success : Bool;
-	var message : String;
-}
-
-@:multiReturn
 extern class FilesystemModuleAppendResult
 {
 	var success : Bool;
@@ -103,6 +96,13 @@ extern class FilesystemModuleLoadResult
 {
 	var chunk : Dynamic;
 	var errormsg : String;
+}
+
+@:multiReturn
+extern class FilesystemModuleWriteResult
+{
+	var success : Bool;
+	var message : String;
 }
 
 @:multiReturn

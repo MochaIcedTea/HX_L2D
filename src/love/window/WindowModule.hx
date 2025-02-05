@@ -86,19 +86,17 @@ extern class WindowModule
 }
 
 @:multiReturn
-extern class WindowModuleGetSafeAreaResult
-{
-	var x : Float;
-	var y : Float;
-	var w : Float;
-	var h : Float;
-}
-
-@:multiReturn
 extern class WindowModuleToPixelsResult
 {
 	var px : Float;
 	var py : Float;
+}
+
+@:multiReturn
+extern class WindowModuleFromPixelsResult
+{
+	var x : Float;
+	var y : Float;
 }
 
 @:multiReturn
@@ -124,16 +122,18 @@ extern class WindowModuleGetPositionResult
 }
 
 @:multiReturn
+extern class WindowModuleGetSafeAreaResult
+{
+	var x : Float;
+	var y : Float;
+	var w : Float;
+	var h : Float;
+}
+
+@:multiReturn
 extern class WindowModuleGetModeResult
 {
 	var width : Float;
 	var height : Float;
 	var flags : Table<Dynamic,Dynamic>;
-}
-
-@:multiReturn
-extern class WindowModuleFromPixelsResult
-{
-	var x : Float;
-	var y : Float;
 }
