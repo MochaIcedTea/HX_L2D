@@ -86,10 +86,10 @@ extern class WindowModule
 }
 
 @:multiReturn
-extern class WindowModuleToPixelsResult
+extern class WindowModuleGetDesktopDimensionsResult
 {
-	var px : Float;
-	var py : Float;
+	var width : Float;
+	var height : Float;
 }
 
 @:multiReturn
@@ -97,13 +97,6 @@ extern class WindowModuleFromPixelsResult
 {
 	var x : Float;
 	var y : Float;
-}
-
-@:multiReturn
-extern class WindowModuleGetDesktopDimensionsResult
-{
-	var width : Float;
-	var height : Float;
 }
 
 @:multiReturn
@@ -128,6 +121,13 @@ extern class WindowModuleGetSafeAreaResult
 	var y : Float;
 	var w : Float;
 	var h : Float;
+}
+
+@:multiReturn
+extern class WindowModuleToPixelsResult
+{
+	var px : Float;
+	var py : Float;
 }
 
 @:multiReturn
