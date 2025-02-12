@@ -56,17 +56,17 @@ extern class FileOpenResult
 }
 
 @:multiReturn
+extern class FileReadResult
+{
+	var contents : Dynamic;
+	var size : Float;
+}
+
+@:multiReturn
 extern class FileFlushResult
 {
 	var success : Bool;
 	var err : String;
-}
-
-@:multiReturn
-extern class FileGetBufferResult
-{
-	var mode : BufferMode;
-	var size : Float;
 }
 
 @:multiReturn
@@ -77,8 +77,8 @@ extern class FileWriteResult
 }
 
 @:multiReturn
-extern class FileReadResult
+extern class FileGetBufferResult
 {
-	var contents : Dynamic;
+	var mode : BufferMode;
 	var size : Float;
 }

@@ -48,7 +48,7 @@ abstract Scancode (String)
 	var Leftbracket = "[";
 	var Rightbracket = "]";
 	var Backslash = "\\";
-	var Nonus# = "nonus#";
+	var Nonus_hash = "nonus#";
 	var Semicolon = ";";
 	var Singlequote = "'";
 	var Backtick = "`";
@@ -115,11 +115,11 @@ abstract Scancode (String)
 	var Copy = "copy";
 	var Paste = "paste";
 	var Find = "find";
-	var Kp/ = "kp/";
-	var Kp* = "kp*";
-	var Kp- = "kp-";
-	var Kp+ = "kp+";
-	var Kp= = "kp=";
+	var Kp_slash = "kp/";
+	var Kp_asterisk = "kp*";
+	var Kp_hyphen = "kp-";
+	var Kp_plus = "kp+";
+	var Kp_equals = "kp=";
 	var Kpenter = "kpenter";
 	var Kp1 = "kp1";
 	var Kp2 = "kp2";
@@ -131,7 +131,7 @@ abstract Scancode (String)
 	var Kp8 = "kp8";
 	var Kp9 = "kp9";
 	var Kp0 = "kp0";
-	var Kp. = "kp.";
+	var Kp_period = "kp.";
 	var International1 = "international1";
 	var International2 = "international2";
 	var International3 = "international3";

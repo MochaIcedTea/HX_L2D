@@ -92,10 +92,10 @@ extern class FilesystemModuleLoadResult
 }
 
 @:multiReturn
-extern class FilesystemModuleAppendResult
+extern class FilesystemModuleNewFileDataResult
 {
-	var success : Bool;
-	var errormsg : String;
+	var data : FileData;
+	var err : String;
 }
 
 @:multiReturn
@@ -108,10 +108,10 @@ extern class FilesystemModuleReadResult
 }
 
 @:multiReturn
-extern class FilesystemModuleNewFileDataResult
+extern class FilesystemModuleAppendResult
 {
-	var data : FileData;
-	var err : String;
+	var success : Bool;
+	var errormsg : String;
 }
 
 @:multiReturn
