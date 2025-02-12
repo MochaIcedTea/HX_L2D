@@ -52,6 +52,13 @@ extern class Joystick extends Object
 }
 
 @:multiReturn
+extern class JoystickGetIDResult
+{
+	var id : Float;
+	var instanceid : Float;
+}
+
+@:multiReturn
 extern class JoystickGetDeviceInfoResult
 {
 	var vendorID : Float;
@@ -65,13 +72,6 @@ extern class JoystickGetGamepadMappingResult
 	var inputtype : JoystickInputType;
 	var inputindex : Float;
 	var hatdirection : JoystickHat;
-}
-
-@:multiReturn
-extern class JoystickGetIDResult
-{
-	var id : Float;
-	var instanceid : Float;
 }
 
 @:multiReturn

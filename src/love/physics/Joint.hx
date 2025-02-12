@@ -29,10 +29,12 @@ extern class Joint extends Object
 }
 
 @:multiReturn
-extern class JointGetBodiesResult
+extern class JointGetAnchorsResult
 {
-	var bodyA : Body;
-	var bodyB : Body;
+	var x1 : Float;
+	var y1 : Float;
+	var x2 : Float;
+	var y2 : Float;
 }
 
 @:multiReturn
@@ -43,10 +45,8 @@ extern class JointGetReactionForceResult
 }
 
 @:multiReturn
-extern class JointGetAnchorsResult
+extern class JointGetBodiesResult
 {
-	var x1 : Float;
-	var y1 : Float;
-	var x2 : Float;
-	var y2 : Float;
+	var bodyA : Body;
+	var bodyB : Body;
 }

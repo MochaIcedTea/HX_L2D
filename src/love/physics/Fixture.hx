@@ -61,6 +61,22 @@ extern class Fixture extends Object
 }
 
 @:multiReturn
+extern class FixtureGetFilterDataResult
+{
+	var categories : Float;
+	var mask : Float;
+	var group : Float;
+}
+
+@:multiReturn
+extern class FixtureRayCastResult
+{
+	var xn : Float;
+	var yn : Float;
+	var fraction : Float;
+}
+
+@:multiReturn
 extern class FixtureGetBoundingBoxResult
 {
 	var topLeftX : Float;
@@ -76,20 +92,4 @@ extern class FixtureGetMassDataResult
 	var y : Float;
 	var mass : Float;
 	var inertia : Float;
-}
-
-@:multiReturn
-extern class FixtureGetFilterDataResult
-{
-	var categories : Float;
-	var mask : Float;
-	var group : Float;
-}
-
-@:multiReturn
-extern class FixtureRayCastResult
-{
-	var xn : Float;
-	var yn : Float;
-	var fraction : Float;
 }
